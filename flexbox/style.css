@@ -8,6 +8,8 @@
 body{
     font: 12px "Lucida Grande", Helvetica, Arial, sans-serif;
     width: 100%;
+    min-width: 120px;
+    margin: 0 auto;
 }
 
 .container{
@@ -18,37 +20,58 @@ body{
 .item{
     padding: 1em;
     background-color: peachpuff;
-    border: .5rem solid salmon;
+    border: .25rem solid salmon;
     /*margin: 0 auto;*/
-    flex: .5;
 }
 
 /*Specific edits*/
-#item2{
-    align-items: center;
-    display: flex;
-    flex: 1;
-    justify-content: space-evenly;
-    gap: 10px;
-    div{
-        display: flex;
-        flex: 1;
-        border: .25rem solid salmon;
-    }
-}
-
 #header{
+    text-align: center;
     display: flex;
     background-color: cornflowerblue;
     border: 10px solid dodgerblue;
     width: 100%;
-    padding: 0 5% 0 10%; /*this lets you move elements inside a navbar/header for ex. */
+    padding: 0 5%; /*this lets you move elements inside a navbar/header for ex. */
     align-items: center;
     gap: 1em;
+    flex-wrap: wrap;
+    div{
+        justify-content: right;
+    }
 }
 
+#item1{
+    display: flex;
+    flex: .5;
+    flex-wrap: wrap;
+    #logo{
+        flex: .5;
+    }
+    #textlogo{
+        flex: 1;
+    }
+}
+
+#item2{
+    align-items: center;
+    display: flex;
+    flex: 1;
+    gap: 10px;
+    flex-wrap: wrap;
+    div{
+        display: flex;
+        border: .25rem solid salmon;
+    }
+}
 #main{
-    gap: 1em;
-    margin: 0 auto;
+    margin: 2em auto;
+    height: 300px;
+    flex-wrap: wrap;
+    #item3, #item4, #item5{
+        line-height: 300px;
+        align-items: center;
+        text-align: center;
+        flex: 1;
+    }
 }
 
