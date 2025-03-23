@@ -35,9 +35,6 @@ body{
     align-items: center;
     gap: 1em;
     flex-wrap: wrap;
-    div{
-        justify-content: right;
-    }
 }
 
 #item1{
@@ -53,6 +50,7 @@ body{
 }
 
 #item2{
+    justify-content: flex-end;
     align-items: center;
     display: flex;
     flex: 1;
@@ -75,11 +73,38 @@ body{
     align-items: center;
     text-align: center;
 }
-
-#item4, #item5{
-
-    display: inline-block;
-    align-items: center;
+#rightsidemain{
+    align-content: space-evenly;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+    gap: 2em;
     text-align: center;
+}
+#item4{
+    height: 140px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
     flex: 1;
+    align-content: flex-start;
  }
+
+#item5{
+    height: 140px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex: .5;
+    align-content: flex-end;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    div{
+        display: flex;
+    }
+}
