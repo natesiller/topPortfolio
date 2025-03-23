@@ -67,11 +67,19 @@ body{
     margin: 2em auto;
     height: 300px;
     flex-wrap: wrap;
-    #item3, #item4, #item5{
-        line-height: 300px;
-        align-items: center;
-        text-align: center;
-        flex: 1;
-    }
 }
 
+#item3{
+    line-height: 300px;
+    flex: 1;
+    align-items: center;
+    text-align: center;
+}
+
+#item4, #item5{
+
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+ }
